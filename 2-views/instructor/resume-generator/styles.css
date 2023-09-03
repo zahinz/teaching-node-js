@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Courier New", monospace;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.resume,
+.resume-form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  line-height: 50px;
+}
+
+h2 {
+  font-size: 1.2rem;
+  line-height: 30px;
+}
+
+.section {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  line-height: 30px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+/* Style the "Add More Education" and "Add More Experience" buttons as outline */
+#add-education,
+#add-experience {
+  background-color: transparent;
+  color: #007bff;
+  border: 2px solid #007bff;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  display: block;
+  margin: 20px auto;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#add-education:hover,
+#add-experience:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* Style the "Generate Resume" button as solid */
+button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  display: block;
+  margin: 20px auto;
+  transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+button.remove-button {
+  background-color: #ff6347; /* Red color */
+  color: #fff; /* White text color */
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  float: right;
+  margin-bottom: 10px;
+}
+
+button.remove-button:hover {
+  background-color: #d43f00; /* Darker red color on hover */
+}
+
+.input-container {
+  display: flex;
+  gap: 10px;
+}

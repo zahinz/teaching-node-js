@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume Generator</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="resume-form">
+      <h1>Resume Generator</h1>
+      <form action="/generate" method="POST">
+        <!-- Personal Information -->
+        <div class="section">
+          <h2>Personal Information</h2>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+          <label for="location">Location:</label>
+          <input type="text" id="location" name="location" required />
+          <label for="occupation">Occupation:</label>
+          <input type="text" id="occupation" name="occupation" required />
+        </div>
+
+        <!-- Education -->
+        <div class="section">
+          <h2>Education</h2>
+          <div id="education-container">
+            <label for="edu1">Education 1:</label>
+            <input type="text" id="edu1" name="education[0]" required />
+          </div>
+          <button type="button" id="add-education">Add More Education</button>
+        </div>
+
+        <!-- Work Experience -->
+        <div class="section">
+          <h2>Work Experience</h2>
+          <div id="experience-container">
+            <label for="exp1">Experience 1:</label>
+            <input type="text" id="exp1" name="experience[0]" required />
+          </div>
+          <button type="button" id="add-experience">Add More Experience</button>
+        </div>
+
+        <button type="submit">Generate Resume</button>
+      </form>
+    </div>
+  </body>
+</html>
