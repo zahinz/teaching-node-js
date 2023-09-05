@@ -1,0 +1,11 @@
+{
+  "name": "0-pilot",
+  "version": "1.0.0",
+  "description": "this is the test node js app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "zahinz",
+  "license": "ISC"
+}
