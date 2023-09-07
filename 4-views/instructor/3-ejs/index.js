@@ -17,6 +17,11 @@ app.get("/", (req, res) => {
   res.render("page", data);
 });
 
+app.get("/account/:name", (req, res) => {
+  const name = req.params.name;
+  res.render("account", { name: name });
+});
+
 // Start the server on port 3000
 const port = 3000;
 app.listen(port, () => {
