@@ -1,0 +1,26 @@
+Step 1: Setting Up Your Project
+- Create a new project directory.
+- Initialize a new Node.js project using npm init.
+- Install Express using npm install express.
+
+Step 2: Create MVC Structure
+- Create directories for Models (we'll omit the actual models for now), Views, and Controllers.
+- For example: views and controllers.
+
+Step 3: Set Up Express
+- Create an app.js file.
+- Set up Express in app.js.
+- Configure static file serving for CSS and JavaScript.
+- Listen on a specific port (e.g., 3000).
+
+Step 4: Create Routes and Controllers
+- In the controllers directory, create files for route handlers (e.g., homeController.js, userController.js).
+- Define route handlers in each controller file.
+- Import and use controllers in app.js with appropriate route paths.
+
+Step 5: Create Views
+- In the views directory, create HTML templates for your application's pages.
+- Use template EJS or to dynamically generate HTML content.
+
+Expected Result:
+- By following these revised steps, your students will have a basic structure in place for a Node.js MVC application without including models. They'll be able to serve web pages, handle routes, and create dynamic views, which sets the foundation for building more complex applications with Express in the future.
