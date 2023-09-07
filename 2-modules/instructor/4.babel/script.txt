@@ -1,0 +1,2 @@
+babel-node index.js
+babel . -d dist
