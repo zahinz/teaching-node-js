@@ -1,6 +1,7 @@
-import math from "./math.mjs";
+// import math from "./math.mjs";
+import { add, subtract } from "./math.mjs";
 
 console.log("index module starts");
 
-console.log(math.add(2, 2));
-console.log(math.subtract(10, 5));
+console.log(add(2, 2));
+console.log(subtract(10, 5));
