@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Cart</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h2>hello</h2>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="cart">
+        <button id="cart-button">
+          My Cart <span id="cart-item-count">0</span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="cart-items">
+        <!-- Sample Cart Items -->
+        <div class="cart-item">
+          <img src="assets/1.png" alt="Product 1" />
+          <div class="item-details">
+            <h3>Product 1</h3>
+            <p class="price">$19.99</p>
+          </div>
+          <div class="item-quantity">
+            <input type="number" value="1" min="1" />
+          </div>
+          <div class="item-total">
+            <p class="total-price">$19.99</p>
+          </div>
+          <div class="item-actions">
+            <button>Remove</button>
+          </div>
+        </div>
+        <!-- Add more cart items here -->
+      </section>
+    </main>
+  </body>
+</html>

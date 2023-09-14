@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node JS To-Do App</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div>
+        <form action="/" method="post">
+            <input type="text" name="title" id="title">
+            <button type="submit">Add</button>
+        </form>
+        <div>
+            <ol>
+                <% for (let i = 0; i < data.length; i++) { %>
+                <li>
+                    <%= data[i].title %>
+                    <input type="checkbox" name="checkTodo" id="checkTodo"  data-todo-id="<%= data[i].id %>" <% if (data[i].completed) { %>checked<% } %>>
+                </li>
+                <% } %>
+            </ol>
+        </div>
+    </div>
+</body>
+</html>
