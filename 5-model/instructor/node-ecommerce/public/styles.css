@@ -35,6 +35,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 60px;
   padding: calc(3 * var(--spacing-unit)) calc(3 * var(--spacing-unit));
 }
 

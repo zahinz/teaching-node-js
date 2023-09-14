@@ -1,6 +1,7 @@
 const getAllProducts = (req, res) => {
   // insert sql selct query then render product card
-  res.render("pages/index");
+  const test = "Hello world";
+  res.render("pages/index", { title: test });
 };
 
 export default getAllProducts;

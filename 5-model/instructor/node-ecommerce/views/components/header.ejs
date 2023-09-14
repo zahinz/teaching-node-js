@@ -8,8 +8,10 @@
     </ul>
   </nav>
   <div class="cart">
+    <% if (cartButtonShow) { %>
     <button id="cart-button" onclick="clickCartButton()">
       My Cart <span id="cart-item-count">0</span>
     </button>
+    <% } %>
   </div>
 </header>
