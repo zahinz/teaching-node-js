@@ -80,6 +80,7 @@ const publicController = (req, res) => {
 const protectedController = (req, res) => {
   res
     .status(200)
+    // req.user came from middleware assignation
     .json({ message: "Protected controller route", data: { user: req.user } });
 };
 
