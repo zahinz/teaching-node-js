@@ -1,6 +1,7 @@
 import { Router } from "express";
 import publicController from "../controllers/public.js";
 import authController from "../controllers/auth.js";
+import isAuthenticated from "../middleware/isAuthenticated.js";
 
 const apiRoutes = Router();
 
@@ -11,6 +12,10 @@ apiRoutes.post("/register", authController.register);
 apiRoutes.post("/login", authController.login);
 
 apiRoutes.get("/public", authController.publicController);
-apiRoutes.get("/protected", authController.protectedController);
+apiRoutes.get(
+  "/protected",
+  isAuthenticated,
+  authController.protectedController
+);
 
 export default apiRoutes;
