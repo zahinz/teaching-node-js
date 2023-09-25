@@ -40,12 +40,12 @@ const ProtectedRoutes = () => {
   // }
 
   // check validity token to backend
-  const config = {
-    headers: { Authorization: `Bearer ${token}` },
-  };
   const checkToken = async () => {
     try {
       // IMPORTANT INSERTION TOKEN INTO HEADER
+      const config = {
+        headers: { Authorization: `Bearer ${token}` },
+      };
       const res = await axios.get("http://localhost:8080/protected", config);
       setUserId(res.data.data.user);
     } catch (error) {
