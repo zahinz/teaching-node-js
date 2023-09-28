@@ -59,6 +59,8 @@ const ProtectedRoutes = () => {
   useEffect(() => {
     if (token) {
       checkToken();
+    } else {
+      navigate("/login");
     }
   }, []);
 
