@@ -1,0 +1,22 @@
+CLONE BITLY
+- provide shorter url for long url
+- redirection
+
+- server and client
+- server NODE JS
+- using starter file from https://github.com/redcartel/node-express-starter-2022
+- client REACT
+
+BASIC
+- register
+- login
+- only auth user can create a short url link
+- short link must be randomise
+- track number of visitor who visited the link
+- simple dashboard utk list all the created link
+
+LINK MODEL
+- original_link
+- shortened_link
+- visit_count
+
