@@ -1,5 +1,8 @@
 NGINX DO
 
+sudo apt update
+sudo apt install nginx
+
 sudo nano /etc/nginx/sites-available/node-client
 
 server {
