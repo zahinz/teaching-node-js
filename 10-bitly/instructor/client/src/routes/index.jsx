@@ -29,7 +29,7 @@ const ProtectedRoutes = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    if (token) {
+    if (!token) {
       navigate("/login");
     }
   }, []);

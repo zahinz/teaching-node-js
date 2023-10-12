@@ -58,3 +58,15 @@ input {
   color: black;
   border: 1px solid black;
 }
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  text-align: left;
+  border: 1px solid black;
+  padding: 0.5rem;
+}

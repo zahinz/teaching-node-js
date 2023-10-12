@@ -2,8 +2,26 @@ import React from "react";
 import Page from "../components/Page";
 import Header from "../components/Header";
 import Container from "../components/Container";
+import { apiRegister } from "../utils/api/auth";
+import { useNavigate } from "react-router-dom";
 
 const Register = () => {
+  const navigate = useNavigate();
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const form = e.target;
+    const formData = new FormData(form);
+    const data = Object.fromEntries(formData);
+    console.log(data);
+    try {
+      const response = await apiRegister(data);
+      alert(response.data.message);
+      navigate("/login");
+    } catch (error) {
+      alert(error.message);
+    }
+  };
+
   return (
     <Page>
       <Header />
@@ -14,7 +32,7 @@ const Register = () => {
           alignItems: "center",
         }}
       >
-        <form style={formContainer}>
+        <form style={formContainer} onSubmit={handleSubmit}>
           <h5>Register</h5>
           {/* email */}
           <div style={inputContainer}>
