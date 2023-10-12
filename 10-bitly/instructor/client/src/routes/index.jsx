@@ -34,31 +34,10 @@ const ProtectedRoutes = () => {
   const cookies = new Cookies(null, { path: "/" });
   const token = cookies.get("token");
   const navigate = useNavigate();
-  const [userId, setUserId] = useState(null);
-  // if (!token) {
-  //   return <Navigate to="/login" />;
-  // }
-
-  // check validity token to backend
-  const checkToken = async () => {
-    try {
-      // IMPORTANT INSERTION TOKEN INTO HEADER
-      const config = {
-        headers: { Authorization: `Bearer ${token}` },
-      };
-      const res = await axios.get("http://localhost:8080/protected", config);
-      setUserId(res.data.data.user);
-    } catch (error) {
-      console.error(error);
-      alert(error.response.data.message);
-      cookies.remove("token");
-      navigate("/login");
-    }
-  };
 
   useEffect(() => {
     if (token) {
-      checkToken();
+      navigate("/login");
     }
   }, []);
 
